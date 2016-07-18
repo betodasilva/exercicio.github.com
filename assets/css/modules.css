@@ -1,0 +1,33 @@
+/*------------------------
+Modules
+------------------------*/
+
+/** { border: 1px solid red; }*/
+/*HEADER*/
+.header 
+{
+	background: #ecf0f1;
+}
+
+.header__logo {}
+
+.header__nav ul
+{
+	display: flex;
+
+}
+
+.header__nav li
+{
+	list-style: none;
+	padding: 20px;
+	font-size: 20px;	
+}
+
+.header__section { text-align: center; }
+
+.header__section-title {}
+
+.header__section-search {}
+
+.header__section-subtitle {}
