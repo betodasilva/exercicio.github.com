@@ -4,30 +4,146 @@ Modules
 
 /** { border: 1px solid red; }*/
 /*HEADER*/
-.header 
+.wrapper-fluid 
 {
-	background: #ecf0f1;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.wrapper-fix 
+{
+	margin-right: -15px;
+	margin-left: -15px;
 }
 
-.header__logo {}
+.header--bar { background: #ffffff; }
 
-.header__nav ul
-{
-	display: flex;
+.hero { background: #ecf0f1; }
 
+.header__logo span
+{ 
+	display: inline-block; 
+	font-size: 26px;
+	font-weight: bolder;
+	padding: 5px 10px;
+	margin: 10px 0; 
+	background: #424242;
+	color: #fff;
+}
+
+.header__nav ul,
+.header__nav a { display: flex; flex-wrap: nowrap;}
+
+.header__nav ul 
+{ 
+	list-style: none; 
+	margin-top: 25px;
 }
 
 .header__nav li
-{
-	list-style: none;
-	padding: 20px;
-	font-size: 20px;	
+{ 
+	margin-right: 25px; 
+	text-decoration: none;
 }
 
-.header__section { text-align: center; }
+.header__nav a 
+{ 
+	text-decoration: none;
+	font-weight: bold; 
+}
+.header__nav a:before
+{ 
+	content: " ";
+	margin: 8px 5px 0 0;
+	width: 8px;
+	height: 8px;
+	border-radius: 100%;
+	background: #2980B9;
+}
 
-.header__section-title {}
+.hero-section 
+{ 
+	max-width: 940px;
+	text-align: center; 
+}
 
-.header__section-search {}
+.section__search
+{
+	padding: 2em 0;
+}
 
-.header__section-subtitle {}
+.section__search-title
+{
+	font-weight: bold;
+	margin-bottom: .4em;
+}
+
+.section__search-searcher input
+{
+	border: 0;
+	border-radius: 5px;
+	background: #fff;
+	width: 80%;
+	/*height: 0px;*/
+	padding: 10px 20px;
+}
+
+.section__search-button
+{
+	position: absolute;
+	right: 11.5%;
+	border: 0;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	color: #fff;
+	background: #2980b9;
+	font-weight: bold;
+	padding: 10px 15px;
+}
+
+.section__search-example 
+{
+	font-weight: normal;
+	color: #777;
+}
+.section__contribute-text {font-size: 20px;}
+.section__contribute
+{
+	margin: 3em 0;
+}
+
+.section__contribute button
+{
+	border: 0;
+	font-size: 18px;
+	border-radius: 5px;	
+	color: #fff;
+	background: #34495e;
+	padding: .2em .6em;
+}
+
+.section__contribute button:hover { background: #2c3e50; }
+
+@media (min-width: 768px)
+{
+	.section__search-title 
+	{ 
+		font-size: 36px; 
+		margin-top: 1.6em;
+	}
+	.header__nav a { font-size: 18px; }
+	.header__section-search {font-size: 20px;}
+	.search-button {padding: 15px;}
+	.section__search-example {font-size: 18px;}
+	/*.header__section-search { width: 800px; }*/
+
+	.row--padding-sm
+	{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.section__search-searcher input,
+	.section__search-button { font-size: 18px; }
+
+}
