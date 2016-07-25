@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<link rel="stylesheet" type="text/css" href="assets/css/modules.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/base.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta charset="UTF-8">
+	<title>Exercic.io | Baixe apostilas, livros e listas de exercícios grátis.</title>
+
+	<!-- INCLUDE TIPUE SEARCH -->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+	<script src="tipuesearch/tipuesearch_content.js"></script>
+	<script src="tipuesearch/tipuesearch_set.js"></script>
+	<script src="tipuesearch/tipuesearch.min.js"></script>
+	<!-- END TIPUE SEARCH -->
+
+</head>
+<body>
+	<div class="wrapper-fluid">
+		<div class="header--bar wrapper-fix">
+			<div class="container">
+				<header class="row header">
+					<div class="col-sm-4 header__logo">
+						<a href="index.html"><span>Exercic.io</span></a>
+					</div>
+					<nav class="col-sm-4 col-sm-offset-3 col-md-offset-4 header__nav">
+						<ul>
+							<li><a href="#">Sobre</a></li>
+							<li><a href="#">Política</a></li>
+							<li><a href="#">FAQ</a></li>
+						</ul>
+					</nav>
+				</header>
+			</div>
+		</div>
+		<div class="row row--hero row--padding-sm wrapper-fix">
+			<div class="hero--bg-color">
+				<section class="container hero-section">
+					<div class="row row--padding-sm">
+						<div class="col-sm-12 col-md-10 col-md-offset-1 section__search">
+							<h1 class="section__search-title">Baixe materiais gratuitos para o ENEM, Vestibular e Concursos</h1>
+							<div class="section__search-searcher">
+								<form>
+								<input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+								</form>
+								<button class="section__search-button">Search</button>
+							</div>
+							<span class="section__search-example">Exemplo: apostila enem bernoulli, prova concurso militar</span>
+						</div>
+					</div>
+					<div class="row row--padding-sm">
+						<div class="col-sm-12 section__contribute">
+							<span class="section__contribute-text">...ou contribua enviando um material</span>
+							<button type="submit">Enviar Arquivo</button> 
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row row--search-content row--padding-sm">
+				<div class="col-md-12" id="tipue_search_content">
+						
+				</div>
+				<script>
+				$(document).ready(function() {
+				     $('#tipue_search_input').tipuesearch();
+				});
+				</script>
+			</div>
+			
+		</div>
+	</div>
+</body>
+</html>
